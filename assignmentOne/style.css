@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem 2rem;
+    display: flex;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background: white;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    background: #ddd;
+    gap: 15px;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 0%;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.profile h1 {
+    color: #3fd9b5;
+    bottom: 4px;
+    left: 1px;
+    padding: 5px 10px;
+    font-size: 20px;
+    position: absolute;
+}
+
+.role {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+h2 {
+    color: #009688;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #009688;
+}
+
+.skill, .language {
+    margin-bottom: 1rem;
+}
+
+.skill p, .language p {
+    margin-bottom: 0.3rem;
+}
+
+.skill-bar {
+    background-color: #f1f1f1;
+    height: 18px;
+    border-radius: 9px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-level {
+    display: block;
+    background-color: #009688;
+    position: absolute;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    height: 100%;
+}
+
+
+.work-experience, .education{
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.job, .school {
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+}
+.job:last-child, .school:last-child{
+    border-bottom: none;
+}
+
+.job h3, .school h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    color: #009688;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    margin: 1rem 0;
+}
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.6rem;
+    /* border: 1px solid white; */
+    border-radius: 3px;
+}
+
+.powered-by {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+   
+    .left-section, .right-section {
+        width: 100%;
+    }
+}
