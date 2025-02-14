@@ -3,7 +3,7 @@ function Contact(){
     return(
     <>
     <section className="py-12 w-full">
-    <div className="container mx-auto"  style={{ width: '95%' }}>
+    <div className="container mx-auto"  style={{ width: '95%' }} id="contact">
         <h2 className="text-xl">Contact</h2>
         <hr className="hr mb-8 mt-[2rem] md:{w-[70%] justify-center} sm:{w-[80%] items-center} "></hr>
         <div className="text-gray-700 leading-normal">

@@ -46,7 +46,7 @@ function About() {
   return (
     <>
       <section>
-        <div className="container mx-auto">
+        <div className="container mx-auto" id="about">
           <h2 className="text-xl">About</h2>
           <hr className="hr mb-8 mt-[2rem] md:{w-[70%] justify-center} sm:{w-[80%] items-center}" />
           <div className="text-gray-700 leading-normal">

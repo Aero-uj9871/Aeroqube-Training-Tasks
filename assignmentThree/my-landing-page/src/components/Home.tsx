@@ -3,7 +3,7 @@ import architect from "../assets/architect.jpg";
 function Home() {
     return (
         <>
-            <div className="relative h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
+            <div className="relative h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px]" id ="home">
                 <img src={architect} alt="BR Architects Building" className="absolute inset-0 w-full h-full object-cover"></img>
                 <div className="absolute inset-0 bg-black/10 bg-opacity-20 flex items-center justify-center">
                     <div className="text-center">

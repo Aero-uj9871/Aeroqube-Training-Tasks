@@ -49,7 +49,7 @@ function Projects() {
   return (
     <>
       <section className="py-12 w-full">
-        <div className="container mx-auto my-auto">
+        <div className="container mx-auto my-auto" id="project">
           <h2 className="text-xl mb-6">Projects</h2>
           <br />
           <hr className="hr mb-8 mt-[-1.3rem] md:{w-[70%] justify-center} sm:{w-[80%] items-center}" />
