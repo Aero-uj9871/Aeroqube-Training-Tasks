@@ -48,8 +48,8 @@ function Projects() {
 
   return (
     <>
-      <section className="py-12 w-full">
-        <div className="container mx-auto my-auto" id="project">
+      <section className="py-12">
+        <div className="container mx-auto px-4 sm:px-5 lg:px-5" id="project">
           <h2 className="text-xl mb-6">Projects</h2>
           <br />
           <hr className="hr mb-8 mt-[-1.3rem] md:{w-[70%] justify-center} sm:{w-[80%] items-center}" />
@@ -57,7 +57,7 @@ function Projects() {
             {/* Step 3: Map through the projects array */}
             {projects.map((project, index) => (
               <div key={index} className="project relative">
-                <img src={project.image} alt={project.title} className="w-full h-[14rem] object-cover" />
+                <img src={project.image} alt={project.title} className="w-full h-[14rem]  " />
                 <div className="absolute inset-0 bg-black/10 bg-opacity-50 flex items-left justify-left">
                   <span className="text-white font-bold bg-black/10 items-center h-12 w-25 px-2">
                     {project.title}

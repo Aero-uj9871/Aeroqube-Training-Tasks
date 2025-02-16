@@ -1,11 +1,10 @@
- import map from "../assets/map.jpg"
 function Contact(){
     return(
     <>
-    <section className="py-12 w-full">
+    <section className="py-12 w-screen">
     <div className="container mx-auto"  style={{ width: '95%' }} id="contact">
         <h2 className="text-xl">Contact</h2>
-        <hr className="hr mb-8 mt-[2rem] md:{w-[70%] justify-center} sm:{w-[80%] items-center} "></hr>
+        <hr className="hr mb-8 mt-[2rem] md:{w-[70%] } sm:{w-[80%] items-center} "></hr>
         <div className="text-gray-700 leading-normal">
             <p className="text-justify font-semibold">Let's get in touch and talk about your next project.</p>
         </div>
@@ -25,10 +24,6 @@ function Contact(){
             </div>
             <button type="submit" className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500">SEND MESSAGE</button>
         </form>
-
-        <div className="mt-10 w-full">
-            <img src={map} alt=""></img>
-        </div>
     </div>
 </section>
     </>

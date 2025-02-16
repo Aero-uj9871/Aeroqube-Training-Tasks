@@ -45,10 +45,10 @@ function About() {
 
   return (
     <>
-      <section>
+      <section className="px-10">
         <div className="container mx-auto" id="about">
           <h2 className="text-xl">About</h2>
-          <hr className="hr mb-8 mt-[2rem] md:{w-[70%] justify-center} sm:{w-[80%] items-center}" />
+          <hr className="hr mb-8 mt-[2rem] md:{w-[80%] justify-center} sm:{w-[80%] items-center}" />
           <div className="text-gray-700 leading-normal">
             <p className="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -57,15 +57,15 @@ function About() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12">
             {/* Step 3: Map over the array to generate the team member cards */}
             {teamMembers.map((member, index) => (
-              <div key={index} className="text-left">
+              <div key={index} className="text-left border-1">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-42 mb-2 object-cover"
+                  className="w-full h-full/2 mb-2   "
                 />
                 <h3 className="font-bold text-lg">{member.name}</h3>
                 <p className="text-gray-700">{member.role}</p>
-                <p className="text-gray-700 mt-2">{member.description}</p>
+                <p className="text-gray-700 mt-2 text-justify">{member.description}</p>
                 <button
                   type="button"
                   className="bg-gray-300 w-full p-2 mt-4 inline-block border-solid"
